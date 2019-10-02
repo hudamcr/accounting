@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".penjualan.ReturPenjualanFragment">
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/memo_retur"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="Memo Retur"
+        android:textColor="#474747"
+        android:background="@drawable/memo_retur_abu"
+        android:textSize="15dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginLeft="250dp"
+        android:padding="16dp"
+        />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/formulir_retur"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_merah"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="200dp"
+        android:layout_marginLeft="103dp"
+        android:padding="16dp"
+        android:text="Formulir Retur Penjualan"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/round_action_bar"
+                android:weightSum="9">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Action"
+                    android:gravity="center"
+                    android:textColor="#474747"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Tanggal"
+                    android:textColor="#474747"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Kode Pelanggan"
+                    android:textColor="#474747"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Nama Pelanggan"
+                    android:textColor="#474747"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Banyaknya"
+                    android:textColor="#474747"
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Satuan"
+                    android:layout_marginRight="60dp"
+                    android:textColor="#474747"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp">
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+></RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginEnd="52dp"
+                android:src="@mipmap/ic_add"
+                app:backgroundTint="@color/colorAccent" />
+    </RelativeLayout>
+
+</FrameLayout>

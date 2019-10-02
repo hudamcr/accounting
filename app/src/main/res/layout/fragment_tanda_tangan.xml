@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="50dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="3dp">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/ttd"
+        android:layout_height="400dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="420dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:weightSum="5.6">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:text="Tambah Kolom"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.8"
+                android:padding="16dp"
+                android:gravity="center"
+                android:text="Batal"
+                android:textSize="20dp"
+                android:textColor="#1998f4"
+                android:background="@drawable/round_putih_biru"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="Simpan"
+                android:textColor="#fff"
+                android:background="@drawable/rounded_biru"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:text="Tambah Kolom"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

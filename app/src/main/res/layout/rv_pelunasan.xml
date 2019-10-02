@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:id="@+id/r1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="6.2">
+            <TextView
+                android:id="@+id/tanggal_invoice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Tanggal Invoice"
+                android:textSize="15dp"
+                android:textColor="#474747"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/kode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Kode Pelanggan"
+                android:layout_marginRight="8dp"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Nama Pelanggan"
+                android:layout_marginRight="8dp"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Jumlah"
+                android:textColor="#474747"
+                android:layout_marginRight="8dp"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tanggal_jatuh_tempo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="Tanggal Jatuh Tempo"
+                android:layout_marginRight="8dp"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/pelunasan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="Pelunasan"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

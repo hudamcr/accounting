@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    android:background="@drawable/round_history">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7.5">
+            <TextView
+                android:id="@+id/action"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_weight="1"
+                android:text="Lihat"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/rounded_hijau"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/no_faktur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="No. Faktur"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Nama Costumer"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Alamat Costumer"
+                android:textColor="#474747"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/no_faktur_pajak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="No. Faktur Pajak"
+                android:textColor="#474747"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tanggal"
+                android:textColor="#474747"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/no_sj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="No. Surat Jalan"
+                android:textColor="#474747"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/termin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:text="Termin"
+                android:layout_marginRight="60dp"
+                android:textColor="#474747"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

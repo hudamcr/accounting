@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/memo_order"
+            android:icon="@mipmap/ic_memoorder_a"
+            android:title="Memo Order" />
+        <item
+            android:id="@+id/sales_order"
+            android:icon="@mipmap/ic_salesorder_a"
+            android:title="Sales Order" />
+        <item
+            android:id="@+id/jadwal_pengiriman"
+            android:icon="@mipmap/ic_jadwalpengiriman_a"
+            android:title="Jadwal Pengiriman" />
+        <item
+            android:id="@+id/surat_jalan"
+            android:icon="@mipmap/ic_suratjalan_a"
+            android:title="Surat Jalan" />
+        <item
+            android:id="@+id/faktur_jual"
+            android:icon="@mipmap/ic_fakturjual_a"
+            android:title="Faktur Jual" />
+        <item
+            android:id="@+id/daftar_piutang"
+            android:icon="@mipmap/ic_daftarpiutang_a"
+            android:title="Daftar Piutang" />
+
+        <item
+            android:id="@+id/pelunasan"
+            android:icon="@mipmap/ic_pelunasan_a"
+            android:title="Pelunasan" />
+
+        <item
+            android:id="@+id/retur_penjualan"
+            android:icon="@mipmap/ic_returpenjualan_a"
+            android:title="Retur Penjualan" />
+
+        <item
+            android:id="@+id/kwitansi"
+            android:icon="@mipmap/ic_kwitansi_a"
+            android:title="Kwitansi" />
+    </group>
+
+
+
+</menu>
