@@ -7,6 +7,7 @@ import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,7 +41,7 @@ class FakturJualFragment : Fragment() {
             // Replace whatever is in the fragment_container view with this fragment,
             // and add the transaction to the back stack so the user can navigate back
             transaction.replace(R.id.content_frame, newFragment)
-//            transaction.addToBackStack(null)
+            transaction.addToBackStack(null)
             // Commit the transaction
             transaction.commit()
 
@@ -86,5 +87,29 @@ class FakturJualFragment : Fragment() {
         keuanganList.add(keuangan)
 
         mAdapter!!.notifyDataSetChanged()
+    }
+    override fun onResume() {
+        super.onResume()
+
+        view!!.isFocusableInTouchMode = true
+        view!!.requestFocus()
+        view!!.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(v: View, keyCode: Int, event: KeyEvent): Boolean {
+
+
+                if (event.getAction() === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                    getActivity()!!.finish();
+//                    val newFragment = MemoOrderFragment()
+//                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+//                    // Replace whatever is in the fragment_container view with this fragment,
+//                    // and add the transaction to the back stack so the user can navigate back
+//                    transaction.replace(R.id.content_frame, newFragment)
+//                    // Commit the transaction
+//                    transaction.commit()
+                    return true
+                }
+                return false
+            }
+        })
     }
 }

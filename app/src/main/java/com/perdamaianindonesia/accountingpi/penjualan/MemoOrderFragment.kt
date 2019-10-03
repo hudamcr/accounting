@@ -16,6 +16,7 @@ import com.perdamaianindonesia.accountingpi.R
 import com.perdamaianindonesia.accountingpi.penjualan.Model.MemoOrder
 import com.perdamaianindonesia.accountingpi.penjualan.adapter.MemoOrderAdapter
 import android.support.v7.widget.DividerItemDecoration
+import android.view.KeyEvent
 import com.perdamaianindonesia.accountingpi.R.id.recyclerView
 
 
@@ -78,5 +79,29 @@ class MemoOrderFragment : Fragment() {
         keuangan = MemoOrder("19/09/2019", "Rochmat Dayat","KB0006","1. Karet Gelang Brontoseno","12")
         keuanganList.add(keuangan)
         mAdapter!!.notifyDataSetChanged()
+    }
+    override fun onResume() {
+        super.onResume()
+
+        view!!.isFocusableInTouchMode = true
+        view!!.requestFocus()
+        view!!.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(v: View, keyCode: Int, event: KeyEvent): Boolean {
+
+
+                if (event.getAction() === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                    getActivity()!!.finish();
+//                    val newFragment = MemoOrderFragment()
+//                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+//                    // Replace whatever is in the fragment_container view with this fragment,
+//                    // and add the transaction to the back stack so the user can navigate back
+//                    transaction.replace(R.id.content_frame, newFragment)
+//                    // Commit the transaction
+//                    transaction.commit()
+                    return true
+                }
+                return false
+            }
+        })
     }
 }

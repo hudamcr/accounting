@@ -63,13 +63,13 @@ public class DaftarPiutangAdapter extends RecyclerView.Adapter<DaftarPiutangAdap
 
         if(daftarpiutang.getStatus()=="LANCAR"){
 
-            holder.status.setTextColor(Color.parseColor("#31e920"));
+            holder.status.setTextColor(Color.parseColor("#36ac14"));
         }
         else if(daftarpiutang.getStatus()=="MACET"){
-            holder.status.setTextColor(Color.parseColor("#ff0000"));
+            holder.status.setTextColor(Color.parseColor("#e63126"));
         }
         else if(daftarpiutang.getStatus()=="KURANG"){
-            holder.status.setTextColor(Color.parseColor("#FFDC00"));
+            holder.status.setTextColor(Color.parseColor("#e99138"));
         }
 
 //        if(position % 2 == 0){

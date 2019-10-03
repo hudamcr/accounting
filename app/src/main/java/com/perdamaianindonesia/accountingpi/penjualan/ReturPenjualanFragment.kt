@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -146,6 +147,30 @@ class ReturPenjualanFragment : Fragment() {
 
 
         return view
+    }
+    override fun onResume() {
+        super.onResume()
+
+        view!!.isFocusableInTouchMode = true
+        view!!.requestFocus()
+        view!!.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(v: View, keyCode: Int, event: KeyEvent): Boolean {
+
+
+                if (event.getAction() === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                    getActivity()!!.finish();
+//                    val newFragment = MemoOrderFragment()
+//                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+//                    // Replace whatever is in the fragment_container view with this fragment,
+//                    // and add the transaction to the back stack so the user can navigate back
+//                    transaction.replace(R.id.content_frame, newFragment)
+//                    // Commit the transaction
+//                    transaction.commit()
+                    return true
+                }
+                return false
+            }
+        })
     }
 }
 

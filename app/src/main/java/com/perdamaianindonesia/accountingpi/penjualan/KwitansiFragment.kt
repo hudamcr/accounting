@@ -11,6 +11,10 @@ import android.widget.TextView
 import android.widget.Toast
 
 import com.perdamaianindonesia.accountingpi.R
+import android.R.attr.fragment
+import android.view.KeyEvent
+import android.view.KeyEvent.KEYCODE_BACK
+import com.perdamaianindonesia.accountingpi.penjualan.Model.MemoOrder
 
 
 class KwitansiFragment : Fragment() {
@@ -31,6 +35,31 @@ class KwitansiFragment : Fragment() {
             Toast.makeText(context,"PRINT", Toast.LENGTH_SHORT).show()
         })
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        view!!.isFocusableInTouchMode = true
+        view!!.requestFocus()
+        view!!.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(v: View, keyCode: Int, event: KeyEvent): Boolean {
+
+
+                if (event.getAction() === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                    getActivity()!!.finish();
+//                    val newFragment = MemoOrderFragment()
+//                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+//                    // Replace whatever is in the fragment_container view with this fragment,
+//                    // and add the transaction to the back stack so the user can navigate back
+//                    transaction.replace(R.id.content_frame, newFragment)
+//                    // Commit the transaction
+//                    transaction.commit()
+                    return true
+                }
+                return false
+            }
+        })
     }
 
  }

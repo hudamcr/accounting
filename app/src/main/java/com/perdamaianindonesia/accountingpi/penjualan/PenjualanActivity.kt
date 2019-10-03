@@ -178,7 +178,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = KwitansiFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -190,7 +190,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = FormulirReturPenjualanFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -202,7 +202,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = PelunasanFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -214,7 +214,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = DaftarPiutangFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -226,7 +226,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = FakturJualFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -238,7 +238,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = SuratJalanFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -250,7 +250,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = JadwalPengirimanFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit()
         }
@@ -262,7 +262,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = SalesOrderFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
@@ -274,7 +274,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
             val fragment = MemoOrderFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.content_frame, fragment, tag)
+            fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
