@@ -16,10 +16,10 @@
         android:layout_gravity="center_horizontal"
         android:text="Memo Retur"
         android:textColor="#474747"
-        android:background="@drawable/memo_retur_abu"
+        android:background="@drawable/formulir_abu"
         android:textSize="15dp"
-        android:layout_marginRight="145dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginRight="220dp"
+        android:layout_marginLeft="103dp"
         android:padding="16dp"
         />
     <TextView
@@ -29,10 +29,12 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_merah"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="200dp"
-        android:layout_marginLeft="103dp"
-        android:padding="16dp"
-        android:text="Formulir Retur Penjualan"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="135dp"
+        android:layout_marginLeft="220dp"
+        android:text="Formulir Retur"
         android:textColor="#fff"
         android:textSize="15dp" />
 

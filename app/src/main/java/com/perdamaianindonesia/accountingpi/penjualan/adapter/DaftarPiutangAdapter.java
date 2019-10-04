@@ -61,6 +61,12 @@ public class DaftarPiutangAdapter extends RecyclerView.Adapter<DaftarPiutangAdap
             }
         });
 
+        if(position==2){
+            holder.itemView.setBackgroundColor(Color.parseColor("#F9F9C9"));
+        }
+        if(position==5){
+            holder.itemView.setBackgroundColor(Color.parseColor("#F9F9C9"));
+        }
         if(daftarpiutang.getStatus()=="LANCAR"){
 
             holder.status.setTextColor(Color.parseColor("#36ac14"));
@@ -71,6 +77,7 @@ public class DaftarPiutangAdapter extends RecyclerView.Adapter<DaftarPiutangAdap
         else if(daftarpiutang.getStatus()=="KURANG"){
             holder.status.setTextColor(Color.parseColor("#e99138"));
         }
+
 
 //        if(position % 2 == 0){
 //            holder.itemView.setBackgroundColor(Color.parseColor("#FFF5F5F5"));

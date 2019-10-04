@@ -26,16 +26,32 @@
                 android:weightSum="3"
                 android:orientation="horizontal"
                 >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_right"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="30dp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_right"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="16dp"
+                    />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:text="ACCOUNTING V2"
                 android:textStyle="bold"
-                android:layout_marginLeft="30dp"
                 android:textSize="28dp"
                 android:textColor="#474747"
-                android:layout_gravity="left"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
                 android:id="@+id/toolbar_title"/>
 
             <ImageView

@@ -30,12 +30,12 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/tanggal"
+                android:id="@+id/waktu"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Tanggal"
+                android:text="Waktu"
                 android:textColor="#474747"
                 android:textSize="15dp" />
 

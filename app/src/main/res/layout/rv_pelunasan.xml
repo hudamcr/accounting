@@ -16,10 +16,10 @@
             android:orientation="horizontal"
             android:weightSum="6.2">
             <TextView
-                android:id="@+id/tanggal_invoice"
+                android:id="@+id/no_invoice"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Tanggal Invoice"
+                android:text="No Invoice"
                 android:textSize="15dp"
                 android:textColor="#474747"
                 android:layout_marginLeft="50dp"

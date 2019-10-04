@@ -1,13 +1,13 @@
 package com.perdamaianindonesia.accountingpi.penjualan.Model;
 
 public class Pelunasan {
-    private String tanggal_invoice, kode,nama, jumlah, tanggal_jatuh_tempo,pelunasan;
+    private String no_invoice, kode,nama, jumlah, tanggal_jatuh_tempo,pelunasan;
 
     public Pelunasan() {
     }
 
-    public Pelunasan(String tanggal_invoice, String kode, String nama,String jumlah, String tanggal_jatuh_tempo,String pelunasan) {
-        this.tanggal_invoice = tanggal_invoice;
+    public Pelunasan(String no_invoice, String kode, String nama,String jumlah, String tanggal_jatuh_tempo,String pelunasan) {
+        this.no_invoice = no_invoice;
         this.kode = kode;
         this.nama = nama;
         this.jumlah = jumlah;
@@ -15,12 +15,12 @@ public class Pelunasan {
         this.pelunasan = pelunasan;
     }
 
-    public String getTanggal_invoice() {
-        return tanggal_invoice;
+    public String getNo_invoice() {
+        return no_invoice;
     }
 
-    public String setTanggal_invoice(String tanggal_invoice) {
-        return tanggal_invoice;
+    public String setNo_invoice(String no_invoice) {
+        return no_invoice;
     }
 
     public String getTanggal_jatuh_tempo() {

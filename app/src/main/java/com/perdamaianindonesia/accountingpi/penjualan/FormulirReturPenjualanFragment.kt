@@ -109,14 +109,13 @@ class FormulirReturPenjualanFragment : Fragment() {
 
 
                 if (event.getAction() === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
-                    getActivity()!!.finish();
-//                    val newFragment = MemoOrderFragment()
-//                    val transaction = activity!!.supportFragmentManager.beginTransaction()
-//                    // Replace whatever is in the fragment_container view with this fragment,
-//                    // and add the transaction to the back stack so the user can navigate back
-//                    transaction.replace(R.id.content_frame, newFragment)
-//                    // Commit the transaction
-//                    transaction.commit()
+                    val newFragment = MemoReturPenjualanFragment()
+                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+                    // Replace whatever is in the fragment_container view with this fragment,
+                    // and add the transaction to the back stack so the user can navigate back
+                    transaction.replace(R.id.content_frame, newFragment)
+                    // Commit the transaction
+                    transaction.commit()
                     return true
                 }
                 return false

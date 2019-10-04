@@ -39,6 +39,7 @@ class MemoReturPenjualanFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceStatgfie: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_memo_retur_penjualan, container, false)
+        (activity as PenjualanActivity).setActionBarTitle("RETUR PENJUALAN")
         recyclerView = view.findViewById(R.id.recyclerView);
         mAdapter = MemoReturPenjualanAdapter(context,keuanganList)
         val mLayoutManager = LinearLayoutManager(context)
@@ -109,14 +110,14 @@ class MemoReturPenjualanFragment : Fragment() {
         view!!.setOnKeyListener(object : View.OnKeyListener {
             override fun onKey(v: View, keyCode: Int, event: KeyEvent): Boolean {
                 if (event.getAction() === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
-//                    getActivity()!!.finish();
-                    val newFragment = FormulirReturPenjualanFragment()
-                    val transaction = activity!!.supportFragmentManager.beginTransaction()
-                    // Replace whatever is in the fragment_container view with this fragment,
-                    // and add the transaction to the back stack so the user can navigate back
-                    transaction.replace(R.id.content_frame, newFragment)
-                    // Commit the transaction
-                    transaction.commit()
+                    getActivity()!!.finish();
+//                    val newFragment = FormulirReturPenjualanFragment()
+//                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+//                    // Replace whatever is in the fragment_container view with this fragment,
+//                    // and add the transaction to the back stack so the user can navigate back
+//                    transaction.replace(R.id.content_frame, newFragment)
+//                    // Commit the transaction
+//                    transaction.commit()
                     return true
                 }
                 return false

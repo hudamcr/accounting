@@ -22,14 +22,14 @@ public class JadwalPengirimanAdapter extends RecyclerView.Adapter<JadwalPengirim
     Context context;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView detail,no_sj,nama,driver,tanggal,keterangan;
+        public TextView detail,no_sj,nama,driver,waktu,keterangan;
         public MyViewHolder(View view) {
             super(view);
             detail = view.findViewById(R.id.detail);
             no_sj = view.findViewById(R.id.no_sj);
             nama = view.findViewById(R.id.nama);
             driver = view.findViewById(R.id.driver);
-            tanggal = view.findViewById(R.id.tanggal);
+            waktu = view.findViewById(R.id.waktu);
             keterangan = view.findViewById(R.id.keterangan);
         }
     }
@@ -54,7 +54,7 @@ public class JadwalPengirimanAdapter extends RecyclerView.Adapter<JadwalPengirim
         holder.nama.setText(jadwalpengiriman.getNama());
         holder.no_sj.setText(jadwalpengiriman.getNo_surat_jalan());
         holder.driver.setText(jadwalpengiriman.getDriver());
-        holder.tanggal.setText(jadwalpengiriman.getTanggal());
+        holder.waktu.setText(jadwalpengiriman.getWaktu());
         holder.keterangan.setText(jadwalpengiriman.getKeterangan());
         holder.detail.setOnClickListener(new View.OnClickListener() {
             @Override

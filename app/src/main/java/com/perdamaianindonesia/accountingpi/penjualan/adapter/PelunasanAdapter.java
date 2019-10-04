@@ -21,11 +21,11 @@ public class PelunasanAdapter extends RecyclerView.Adapter<PelunasanAdapter.MyVi
     Context context;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tanggal_invoice,kode,nama,jumlah,tanggal_jatuh_tempo,pelunasan;
+        public TextView no_invoice,kode,nama,jumlah,tanggal_jatuh_tempo,pelunasan;
 
         public MyViewHolder(View view) {
             super(view);
-            tanggal_invoice = view.findViewById(R.id.tanggal_invoice);
+            no_invoice = view.findViewById(R.id.no_invoice);
             kode = view.findViewById(R.id.kode);
             nama = view.findViewById(R.id.nama);
             jumlah = view.findViewById(R.id.jumlah);
@@ -51,7 +51,7 @@ public class PelunasanAdapter extends RecyclerView.Adapter<PelunasanAdapter.MyVi
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Pelunasan pelunasan = pelunasanList.get(position);
-        holder.tanggal_invoice.setText(pelunasan.getTanggal_invoice());
+        holder.no_invoice.setText(pelunasan.getNo_invoice());
         holder.kode.setText(pelunasan.getKode());
         holder.nama.setText(pelunasan.getNama());
         holder.jumlah.setText(pelunasan.getJumlah());

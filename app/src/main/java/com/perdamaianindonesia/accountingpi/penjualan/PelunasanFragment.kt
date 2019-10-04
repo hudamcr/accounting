@@ -43,19 +43,19 @@ class PelunasanFragment : Fragment() {
     }
 
     private fun preparePelunasanData() {
-        var keuangan = Pelunasan("02-07-2019", "KB0001","AGUS SETIAWAN","32.9400.000","02-09-2019","Transfer")
+        var keuangan = Pelunasan("IV19070001", "KB0001","AGUS SETIAWAN","32.9400.000","02-09-2019","Transfer")
         keuanganList.add(keuangan)
 
-        keuangan = Pelunasan("02-07-2019", "KB0002","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
+        keuangan = Pelunasan("IV19070002", "KB0002","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
         keuanganList.add(keuangan)
 
-        keuangan = Pelunasan("02-07-2019", "KB0003","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
+        keuangan = Pelunasan("IV19070003", "KB0003","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
         keuanganList.add(keuangan)
 
-        keuangan = Pelunasan("02-07-2019", "KB0004","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
+        keuangan = Pelunasan("IV19070004", "KB0004","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
         keuanganList.add(keuangan)
 
-        keuangan = Pelunasan("02-07-2019", "KB0005","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
+        keuangan = Pelunasan("IV19070005", "KB0005","CV. BUMI UTAMA KARYA","2.400.000","02-09-2019","Transfer")
         keuanganList.add(keuangan)
 
         mAdapter!!.notifyDataSetChanged()

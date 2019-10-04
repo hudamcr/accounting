@@ -188,7 +188,7 @@ class PenjualanActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val tag = FormulirReturPenjualanFragment::class.java!!.getSimpleName()
 
         if (supportFragmentManager.findFragmentByTag(tag) == null) {
-            val fragment = FormulirReturPenjualanFragment()
+            val fragment = MemoReturPenjualanFragment()
             val fragmentTransaction = supportFragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.content_frame, fragment)
             fragmentTransaction.addToBackStack(null);

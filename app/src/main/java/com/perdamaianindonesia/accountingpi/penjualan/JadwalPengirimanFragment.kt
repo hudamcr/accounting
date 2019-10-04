@@ -86,19 +86,19 @@ class JadwalPengirimanFragment : Fragment() {
     }
 
     private fun prepareJadwalPengirimanData() {
-        var keuangan = JadwalPengiriman("02-07-2019", "PT. GOLDEN RUBBER INDUSTRY","SO199928381","Jamal","Kirim segera, ya!")
+        var keuangan = JadwalPengiriman("11:20:00", "PT. GOLDEN RUBBER INDUSTRY","SO199928381","Jamal","Kirim segera, ya!")
         keuanganList.add(keuangan)
 
-        keuangan = JadwalPengiriman("02-07-2019", "PT. GOLDEN RUBBER INDUSTRY","SO199928382","Jamal","Kirim segera, ya!")
+        keuangan = JadwalPengiriman("11:20:00", "PT. GOLDEN RUBBER INDUSTRY","SO199928382","Jamal","Kirim segera, ya!")
         keuanganList.add(keuangan)
 
-        keuangan = JadwalPengiriman("02-07-2019", "PT. GOLDEN RUBBER INDUSTRY","SO199928383","Jamal","Kirim segera, ya!")
+        keuangan = JadwalPengiriman("11:20:00", "PT. GOLDEN RUBBER INDUSTRY","SO199928383","Jamal","Kirim segera, ya!")
         keuanganList.add(keuangan)
 
-        keuangan = JadwalPengiriman("02-07-2019", "PT. GOLDEN RUBBER INDUSTRY","SO199928384","Jamal","Kirim segera, ya!")
+        keuangan = JadwalPengiriman("11:20:00", "PT. GOLDEN RUBBER INDUSTRY","SO199928384","Jamal","Kirim segera, ya!")
         keuanganList.add(keuangan)
 
-        keuangan = JadwalPengiriman("02-07-2019", "PT. GOLDEN RUBBER INDUSTRY","SO199928385","Jamal","Kirim segera, ya!")
+        keuangan = JadwalPengiriman("11:20:00", "PT. GOLDEN RUBBER INDUSTRY","SO199928385","Jamal","Kirim segera, ya!")
         keuanganList.add(keuangan)
 
         mAdapter!!.notifyDataSetChanged()

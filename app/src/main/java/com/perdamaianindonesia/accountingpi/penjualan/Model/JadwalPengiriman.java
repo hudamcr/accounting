@@ -1,25 +1,25 @@
 package com.perdamaianindonesia.accountingpi.penjualan.Model;
 
 public class JadwalPengiriman {
-    private String no_surat_jalan, nama, driver,keterangan, tanggal;
+    private String no_surat_jalan, nama, driver,keterangan, waktu;
 
     public JadwalPengiriman() {
     }
 
-    public JadwalPengiriman(String tanggal, String nama, String no_surat_jalan, String driver,String keterangan) {
-        this.tanggal = tanggal;
+    public JadwalPengiriman(String waktu, String nama, String no_surat_jalan, String driver,String keterangan) {
+        this.waktu = waktu;
         this.nama = nama;
         this.no_surat_jalan = no_surat_jalan;
         this.driver = driver;
         this.keterangan = keterangan;
     }
 
-    public String getTanggal() {
-        return tanggal;
+    public String getWaktu() {
+        return waktu;
     }
 
-    public String setTanggal(String tanggal) {
-        return tanggal;
+    public String setWaktu(String waktu) {
+        return waktu;
     }
 
     public String getNo_surat_jalan() {
