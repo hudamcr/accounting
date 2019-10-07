@@ -1,277 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingRight="16dp"
-                android:paddingLeft="16dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-    >
-
-        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+                android:orientation="horizontal"
+                android:weightSum="3">
                 <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.7"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.7"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
 
                     <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Tanggal"
-                            android:text="12-09-2019"
-                            android:drawableRight="@mipmap/ic_arrow_down"/>
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1.3"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
-
-                    <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Nama Pelanggan"
-                            android:text="Agus Setiawan"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"/>
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="70dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
-                <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.7"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
-
-                    <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Kode Pelanggan"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"/>
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1.3"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
-
-                    <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"
-                            android:hint="Alasan Retur"
-                            android:text="Rusak"/>
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="170dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp">
-                <View
                         android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#a4a4a4" />
+                        android:layout_height="wrap_content"
+                        android:hint="Tanggal"
+                        android:text="19/09/2019"
+                        android:drawableRight="@mipmap/ic_arrow_down"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.6"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Pelanggan"
+                        android:text="AGUS SETIAWAN"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Foto Retur"
+                            android:textSize="15dp"/>
+                        <ImageView
+                            android:id="@+id/img_retur"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="30dp"
+                            android:src="@drawable/foto_retur"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.7"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kode Pelanggan"
+                        android:text="KP19980001"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.6"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salah merk"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"
+                        android:hint="Alasan Retur" />
+                </android.support.design.widget.TextInputLayout>
 
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="170dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="220dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+                <View
                     android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#a4a4a4" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="220dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:weightSum="3">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2.35"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hasil Vertifikasi"
+                        android:text="Merk yang dikirim salah"
+                        android:textColorHint="#474747"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Foto Hasil Vertifikasi"
+                            android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/img_vertikasi"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/foto_vertifikasi"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="280dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:weightSum="3">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2.35"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kesimpulan"
+                        android:text="Kesalahan pengiriman merk"
+                        android:textColorHint="#474747"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="380dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:weightSum="2">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.7"
+                    android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp">
-                <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
 
                     <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Hasil Vertifikasi"
-                            android:text="Diterima"
-                            android:textColorHint="#474747"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"/>
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="290dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp">
-                <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
-
-                    <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Kesimpulan"
-                            android:text="Diganti"
-                            android:textColorHint="#474747"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"/>
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="380dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:weightSum="2">
-                <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.7"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
-
-                    <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Customer Service"
-                            android:text="customer service"
-                            android:textColorHint="#474747"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"/>
-                </android.support.design.widget.TextInputLayout>
-                <TextView
-                        android:id="@+id/ttd"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="TTD"
-                        android:paddingRight="50dp"
-                        android:paddingLeft="50dp"
-                        android:paddingTop="16dp"
-                        android:gravity="center"
-                        android:paddingBottom="16dp"
-                        android:background="@drawable/round_oranye"
-                        android:textColor="#fff"
-                        android:textSize="15dp"
-                />
-
+                        android:hint="Customer Service"
+                        android:text="Rochmat"
+                        android:textColorHint="#474747"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:id="@+id/ttd"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ttd"/>
             </LinearLayout>
         </LinearLayout>
 
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="460dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-                    android:layout_marginTop="460dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:weightSum="2">
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:weightSum="2">
                 <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.7"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp">
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.7"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
 
                     <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Vertifikator"
-                            android:text="dayat"
-                            android:textColorHint="#474747"
-                            android:drawableRight="@mipmap/ic_arrow_down"
-                            android:drawableTint="@android:color/transparent"/>
-                </android.support.design.widget.TextInputLayout>
-                <TextView
-                        android:id="@+id/ttd2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="TTD"
-                        android:paddingRight="50dp"
-                        android:paddingLeft="50dp"
-                        android:paddingTop="16dp"
-                        android:gravity="center"
-                        android:paddingBottom="16dp"
-                        android:background="@drawable/round_oranye"
-                        android:textColor="#fff"
-                        android:textSize="15dp"
-                />
+                        android:hint="Vertifikator"
+                        android:text="Hidayat"
+                        android:textColorHint="#474747"
+                        android:drawableRight="@mipmap/ic_arrow_down"
+                        android:drawableTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:id="@+id/ttd2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ttd"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -280,55 +314,55 @@
 
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="535dp">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="535dp">
-            <LinearLayout
-                    android:layout_width="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Tambah Kolom"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_weight="3.8"
+                    android:padding="16dp"
+                    android:text="Tambah Kolom"
+                    android:textColor="#fff" />
+                <TextView
+                    android:id="@+id/batal"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:orientation="horizontal"
-                    android:weightSum="5">
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="Batal"
+                    android:textSize="20dp"
+                    android:textColor="#1998f4"
+                    android:background="@drawable/round_putih_biru"/>
                 <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:text="Tambah Kolom"
-                        android:textSize="20dp"
-                        android:textColor="#fff"
-                        android:background="@android:color/transparent"/>
-                <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:layout_weight="3.4"
-                        android:padding="16dp"
-                        android:text="Tambah Kolom"
-                        android:textColor="#fff" />
-                <TextView
-                        android:id="@+id/batal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="16dp"
-                        android:layout_weight="0.8"
-                        android:padding="16dp"
-                        android:gravity="center"
-                        android:text="Batal"
-                        android:textSize="20dp"
-                        android:textColor="#1998f4"
-                        android:background="@drawable/round_putih_biru"/>
-                <TextView
-                        android:id="@+id/simpan"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"
-                        android:padding="16dp"
-                        android:gravity="center"
-                        android:textSize="20dp"
-                        android:text="Simpan"
-                        android:textColor="#fff"
-                        android:background="@drawable/rounded_biru"/>
+                    android:id="@+id/simpan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="Simpan"
+                    android:textColor="#fff"
+                    android:background="@drawable/rounded_biru"/>
 
             </LinearLayout>
         </LinearLayout>

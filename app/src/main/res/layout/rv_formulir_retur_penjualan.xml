@@ -12,20 +12,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:orientation="horizontal"
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp"
                 android:weightSum="9">
             <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal"
                     android:layout_weight="2"
-                android:layout_marginLeft="60dp">
+                    android:layout_marginLeft="60dp">
                 <TextView
                         android:id="@+id/edit"
+                        android:layout_marginTop="5dp"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:padding="16dp"
+                        android:layout_height="50dp"
                         android:layout_weight="1"
                         android:background="@drawable/rounded_biru"
                         android:text="Edit"
@@ -34,10 +32,10 @@
                         android:textSize="20dp"/>
                 <TextView
                         android:id="@+id/lihat"
+                        android:layout_marginTop="5dp"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
                         android:layout_weight="1"
-                        android:padding="16dp"
                         android:text="Lihat"
                         android:layout_marginLeft="8dp"
                         android:background="@drawable/rounded_hijau"
@@ -48,8 +46,7 @@
             <TextView
                     android:id="@+id/tanggal"
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1.5"
                     android:gravity="center"
                     android:layout_marginLeft="8dp"
@@ -59,8 +56,7 @@
             <TextView
                     android:id="@+id/kode"
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1.5"
                     android:gravity="center"
                     android:text="KB0001"
@@ -69,8 +65,7 @@
             <TextView
                     android:id="@+id/nama"
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center"
                     android:text="AGUS SETIAWAN"
@@ -79,8 +74,7 @@
             <TextView
                     android:id="@+id/banyak"
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="121"
@@ -89,8 +83,7 @@
             <TextView
                     android:id="@+id/satuan"
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Kg"

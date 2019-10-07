@@ -53,57 +53,57 @@
                 android:weightSum="9">
             <TextView
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:text="Action"
                     android:gravity="center"
                     android:textColor="#474747"
+                    android:textStyle="bold"
                     android:layout_marginLeft="60dp"
                     android:textSize="20dp"/>
             <TextView
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1.5"
                     android:gravity="center"
                     android:text="Tanggal"
+                    android:textStyle="bold"
                     android:textColor="#474747"
                     android:textSize="20dp"/>
             <TextView
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1.5"
                     android:gravity="center"
                     android:text="Kode Pelanggan"
+                    android:textStyle="bold"
                     android:textColor="#474747"
                     android:textSize="20dp"/>
             <TextView
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center"
                     android:text="Nama Pelanggan"
+                    android:textStyle="bold"
                     android:textColor="#474747"
                     android:textSize="20dp"/>
             <TextView
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Banyaknya"
+                    android:textStyle="bold"
                     android:textColor="#474747"
                     android:textSize="20dp"/>
             <TextView
                     android:layout_width="0dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Satuan"
+                    android:textStyle="bold"
                     android:layout_marginRight="60dp"
                     android:textColor="#474747"
                     android:textSize="20dp"/>
@@ -112,30 +112,43 @@
 
 <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="230dp">
         <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-         android:layout_height="wrap_content">
+         android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
         </android.support.v7.widget.RecyclerView>
 ></RelativeLayout>
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="500dp"
-            android:orientation="horizontal">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="right"
-                android:layout_marginEnd="52dp"
-                android:src="@mipmap/ic_add"
-                app:backgroundTint="@color/colorAccent" />
-    </RelativeLayout>
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:scaleType="center"
+            android:src="@mipmap/ic_add"
+            app:backgroundTint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.963"
+            app:maxImageSize="50dp" />
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>

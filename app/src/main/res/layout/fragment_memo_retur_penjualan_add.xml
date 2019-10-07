@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="3">
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
@@ -40,7 +40,7 @@
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1.3"
+                    android:layout_weight="1.6"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp">
 
@@ -51,6 +51,15 @@
                         android:drawableRight="@mipmap/ic_arrow_down"
                         android:drawableTint="@android:color/transparent"/>
                 </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Foto Retur"
+                    android:textSize="15dp"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -64,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="3">
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
@@ -83,7 +92,7 @@
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1.3"
+                    android:layout_weight="1.6"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp">
 
@@ -94,7 +103,21 @@
                         android:drawableTint="@android:color/transparent"
                         android:hint="Alasan Retur" />
                 </android.support.design.widget.TextInputLayout>
-
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Foto"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/round_oranye"
+                    android:textSize="15dp"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -126,12 +149,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp">
+                android:layout_marginRight="16dp"
+                android:weightSum="3">
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="2.36"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp">
 
@@ -143,6 +166,14 @@
                         android:drawableRight="@mipmap/ic_arrow_down"
                         android:drawableTint="@android:color/transparent"/>
                 </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Foto Hasil Vertifikasi"
+                    android:textSize="15dp"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -152,16 +183,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <LinearLayout
-                android:layout_marginTop="290dp"
+                android:layout_marginTop="280dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp">
+                android:layout_marginRight="16dp"
+                android:weightSum="3">
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_weight="2.36"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp">
 
@@ -173,6 +204,21 @@
                         android:drawableRight="@mipmap/ic_arrow_down"
                         android:drawableTint="@android:color/transparent"/>
                 </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Foto"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:background="@drawable/round_oranye"
+                        android:textSize="15dp"/>
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
@@ -207,14 +253,11 @@
                 </android.support.design.widget.TextInputLayout>
                 <TextView
                     android:id="@+id/ttd"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="TTD"
-                    android:paddingRight="50dp"
-                    android:paddingLeft="50dp"
-                    android:paddingTop="16dp"
+                    android:padding="10dp"
                     android:gravity="center"
-                    android:paddingBottom="16dp"
                     android:background="@drawable/round_oranye"
                     android:textColor="#fff"
                     android:textSize="15dp"
@@ -253,14 +296,11 @@
                 </android.support.design.widget.TextInputLayout>
                 <TextView
                     android:id="@+id/ttd2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="TTD"
-                    android:paddingRight="50dp"
-                    android:paddingLeft="50dp"
-                    android:paddingTop="16dp"
                     android:gravity="center"
-                    android:paddingBottom="16dp"
+                    android:padding="10dp"
                     android:background="@drawable/round_oranye"
                     android:textColor="#fff"
                     android:textSize="15dp"
@@ -268,9 +308,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -295,7 +332,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:layout_weight="3.4"
+                    android:layout_weight="3.8"
                     android:padding="16dp"
                     android:text="Tambah Kolom"
                     android:textColor="#fff" />
@@ -304,8 +341,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
-                    android:layout_weight="0.8"
-                    android:padding="16dp"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
                     android:gravity="center"
                     android:text="Batal"
                     android:textSize="20dp"
@@ -315,8 +352,8 @@
                     android:id="@+id/simpan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.8"
-                    android:padding="16dp"
+                    android:layout_weight="0.6"
+                    android:padding="10dp"
                     android:gravity="center"
                     android:textSize="20dp"
                     android:text="Simpan"
